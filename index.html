@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory test</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <body>
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+        <script src="libs/three.min.js"></script>
+        <script src="libs/threejs/libs/tween.min.js"></script>
+        <script src="libs/threejs/renderers/CSS3DRenderer.js"></script>
+        <script src="libs/jquery.min.js"></script>
+
+        <div id="info">
+            <div>After you click 'Begin', you will have 20 seconds to memorize the cards that turn over. You will then be tested on how well you could memorize the cards by matching pairs.</div>
+        </div>
+
+        <div id="container">
+            <div class="background">
+                <!--
+                <div class="frame">
+                </div>
+                -->
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div id="menu" class="menu-content">
+                <div class="menu-buttons">
+                    <div>
+                        Deck Style:
+                        <select id="deck_type">
+                            <option>Numbers</option>
+                            <option>Shapes</option>
+                            <option>Objects</option>
+                            <option>Emoji Faces</option>
+                            <option>Emoji Animals</option>
+                        </select>
+                    </div>
+                    <div>
+                        Difficulty:
+                        <select id="difficulty">
+                            <option>Easy</option>
+                            <option>Medium</option>
+                            <option>Hard</option>
+                            <option>Impossible</option>
+                        </select>
+                    </div>
+                    <button id="begin">BEGIN</button>
+                </div>
+                <div id="description">
+                    ...
+                </div>
+                
+            </div>
+
+            <div id="success" class="hidden">
+                <div id="success_text">Congratulations!</div>
+                <button id="reset">PLAY AGAIN</button>
+            </div>
+
+            <div id="timeout" class="hidden">
+                <div class="description">Memorize the pairs show above.</div>
+                <div style="margin-top: 10px;">
+                    <button id="ready">Ready</button><span id="time" style="margin-left: 10px;"class="description">Time: <span id="ready_timer"></span></span>
+                </div>
+            </div>
+
+            <div id="score" class="hidden">
+                <!--<div>Time: <span id="game_timer">0</span></div>-->
+                <div>Errors made: <span id="error_count">0</span></div>
+                <button id="quit">Quit</button>
+            </div>
+        </div>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

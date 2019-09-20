@@ -1,0 +1,283 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family: Helvetica, sans-serif;;
+    overflow: hidden;
+}
+
+a {
+    color: #ffffff;
+}
+
+input {
+    height: 90%;
+    width: 90%;
+    font-size: 60px;
+    text-align: center;
+    background-color: rgba(0, 127, 127, 0.533);
+    color: rgba(255,255,255,0.75);
+    text-shadow: 0 0 10px rgba(0,255,255,0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+#info {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    padding: 10px;
+    font-family: Monospace;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    border-bottom: 1px solid white;
+    background: rgba(0, 0, 0, 0.5);
+}
+#info>div {
+    width: 80%;
+    margin: auto;
+}
+
+.bottom-section {
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 10px 0;
+    background-color: rgba(0,0,0,.5);
+    min-height: 80px;
+}
+
+#success {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    color: rgba(127,255,255,0.75);
+}
+
+.element {
+    width: 120px;
+    height: 160px;
+    box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+    border: 1px solid rgba(127,255,255,0.25);
+    text-align: center;
+    cursor: default;
+}
+
+.element:hover {
+    box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+    border: 1px solid rgba(127,255,255,0.75);
+}
+
+.element .number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    color: rgba(127,255,255,0.75);
+}
+
+.element .symbol {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.75);
+    text-shadow: 0 0 10px rgba(0,255,255,0.95);
+}
+
+.element>input.symbol  {
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.element .details {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    color: rgba(127,255,255,0.75);
+}
+
+.menu-content>*{
+    display: inline-block;
+    text-align: right;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.menu-buttons>*{
+    margin: 5px;
+}
+
+button {
+    color: rgba(127,255,255,0.75);
+    background: transparent;
+    outline: 1px solid rgba(127,255,255,0.75);
+    border: 0px;
+    cursor: pointer;
+    margin: 5px;
+}
+button:hover {
+    background-color: rgba(0,255,255,0.5);
+}
+button:active {
+    color: #000000;
+    background-color: rgba(0,255,255,0.75);
+}
+
+select {
+    color: rgba(127,255,255,0.75);
+    /*background: transparent;*/
+    background: black;
+    outline: 1px solid rgba(127,255,255,0.75);
+    border: 2px;
+    cursor: pointer;
+}
+
+
+.dragto {
+    display: inline-block;
+    margin: 10px;
+    color: rgba(127,255,255,0.75);
+    background: transparent;
+    outline: 1px solid rgba(127,255,255,0.75);
+    border: 0px;
+    padding: 5px 10px;
+    font-size: 24px;
+
+    width: 60px;
+    height: 80px;
+    background-color: rgba(0,255,255,0.5);
+}
+
+.green-border {
+    border: 2px solid #9f3 !important;
+    background-color: rgba(180,90,30,0.5);
+}
+.orange-border {
+    border: 2px solid #f93 !important;
+    background-color: rgba(180,90,30,0.5);
+}
+
+#description {
+    color: white;
+    background: transparent;
+    font-size: 14px;
+    margin-left: 10px;
+    margin: 5px;
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left; 
+}
+#description>.header {
+    font-size: 15px;
+    margin-bottom: 2px;
+    text-decoration: underline;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(textures/bg.jpg);
+    background-size: 500px 500px;
+    opacity: .4;
+}
+
+.frame {
+    border: 1px solid white;
+    display: block;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 50px 10% 120px 10%;
+}
+
+.fa-0:before {
+    content: "0";
+}
+.fa-1:before {
+    content: "1";
+}
+.fa-2:before {
+    content: "2";
+}
+.fa-3:before {
+    content: "3";
+}
+.fa-4:before {
+    content: "4";
+}
+.fa-5:before {
+    content: "5";
+}
+.fa-6:before {
+    content: "6";
+}
+.fa-7:before {
+    content: "7";
+}
+.fa-8:before {
+    content: "8";
+}
+.fa-9:before {
+    content: "9";
+}
+
+.fa-cloud:before {
+    content: "\2601";
+}
+.icon-square:before {
+    content: "\2610";
+}
+
+
+.fa-hearts:before {
+    content: "\2661";
+}
+.fa-diams:before {
+    content: "\2662";
+}
+.fa-spades:before {
+    content: "\2660";
+}
+.fa-clubs:before {
+    content: "\2663";
+}
+
+.em {
+    width: auto;
+    top: 25px !important;
+}
+
+.element.smaller_card {
+    width: 90px;
+    height: 120px;
+}
+
+.element.smaller_card .symbol {
+    top: 30px;
+}
+
+.element.smaller_card .em {
+    height: 1em;
+}
