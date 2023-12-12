@@ -226,10 +226,8 @@ function setupTable(difficulty) {
             if (found_count >= difficulty.table_size) {
                 var endTime = new Date().getTime();
                 var time = (endTime - startTime) / 1000;
-                // $('#success_text').text('Congratualtions! You beat ' + difficulty.name + '!<br/>You made ' + error_count + ' errors and it took you ' + time + ' seconds.');
 
                 $('#success_text').html('Congratualtions! You beat ' + difficulty.name + '!\nYou made ' + error_count + ' errors and it took you ' + time + ' seconds.').wrap('<pre />');
-                // $('#success_text').html('this\n has\n newlines').wrap('<pre />');
 
                 gameState = GameState.PostGame;
                 updateView();
@@ -245,8 +243,11 @@ function setupTable(difficulty) {
 }
 
 function reset() {
+    // reset variables
     found_count = 0;
     error_count = 0;
+    chosenCard = null;
+
     $('#error_count').text(error_count);
     acceptingInput = false;
 
