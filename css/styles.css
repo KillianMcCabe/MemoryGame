@@ -60,8 +60,8 @@ span#ready_timer {
 }
 
 #game_setup .content.panel {
-    margin: 20px;
-    padding: 20px;
+    margin: 1.5em;
+    padding: 1.5em;
     font-family: Monospace;
     font-weight: bold;
     text-align: center;
@@ -81,8 +81,8 @@ span#ready_timer {
     max-width: 40%;
     width: fit-content;
     color: #ffffff;
-    margin: 20px;
-    padding: 20px;
+    margin: 1.5em;
+    padding: 1.5em;
     font-family: Monospace;
     font-weight: bold;
     text-align: center;
@@ -98,8 +98,8 @@ span#ready_timer {
 #game_setup div.header {
     font-size: 1.5em;
     text-align: left;
-    padding-top: 20px;
-    padding-bottom: 8px;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
 }
 
 #game_setup .menu-content .header {
@@ -111,7 +111,7 @@ span#ready_timer {
 }
 
 button.button {
-    padding: 5px 20px;
+    padding: 0.5em 1.5em;
     font-size: 1.2em;
 }
 
@@ -188,11 +188,12 @@ div.bottombar {
 }
 
 .setup-options>* {
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
 }
 
 .setup-options select {
     min-width: 130px;
+    font-size: 1.2em;
 }
 
 button {
@@ -201,7 +202,7 @@ button {
     outline: 1px solid rgba(127, 255, 255, 0.75);
     border: 0px;
     cursor: pointer;
-    margin: 5px;
+    margin: 0.3em;
 }
 
 button:hover {
@@ -242,15 +243,15 @@ select {
 #difficulty_description {
     color: white;
     background: transparent;
-    margin-left: 10px;
+    margin-left: 0.75em;
     border: 1px solid white;
-    padding: 8px;
+    padding: 0.5em;
     text-align: left;
 }
 
 #difficulty_description>.header {
     font-size: 1.1em;
-    margin-bottom: 2px;
+    margin-bottom: 0.1em;
     text-decoration: underline;
 }
 
@@ -261,18 +262,6 @@ select {
     background-image: url(textures/bg.jpg);
     background-size: 500px 500px;
     opacity: .4;
-}
-
-.frame {
-    border: 1px solid white;
-    display: block;
-    position: absolute;
-    height: auto;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 50px 10% 120px 10%;
 }
 
 .fa-0:before {
@@ -340,6 +329,7 @@ select {
     content: "\2663";
 }
 
+/* emoji_face_icons */
 .em {
     width: auto;
     top: 25px !important;
@@ -382,6 +372,11 @@ select {
     .top-left.content.panel {
         min-width: unset;
         max-width: unset;
+    }
+
+    .setup-options select {
+        min-width: 80px;
+        font-size: 1.2em;
     }
 
     div.topbar {
