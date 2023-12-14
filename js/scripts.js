@@ -112,7 +112,7 @@ function clearTable() {
 
 function setupTable(difficulty) {
 
-    $('#description').html('<div class="header">' + difficulty.name + '</div><div>deck size: ' + difficulty.table_size + '</div><div>cards in use: ' + difficulty.cards_in_use + '</div>');
+    $('#difficulty_description').html('<div class="header">' + difficulty.name + '</div><div>deck size: ' + difficulty.table_size + '</div><div>cards in use: ' + difficulty.cards_in_use + '</div>');
 
     var deck_size = difficulty.table_size;
     var table_width = difficulty.table_width;
@@ -169,7 +169,7 @@ function setupTable(difficulty) {
         var row = Math.floor(i / table_width);
         object.id = i;
         object.position.x = ((i % table_width) * horizontal_spacing_between_cards) - (horizontal_spacing_between_cards * ((table_width - 1) / 2)) + 1; // the +1 here actually fixes a bug in Safari where rotations won't work on cards with y position of 0
-        object.position.y = (-row * vertical_space_between_cards) + (rowCount-1) * (vertical_space_between_cards * 0.5);
+        object.position.y = (-row * vertical_space_between_cards) + (rowCount - 1) * (vertical_space_between_cards * 0.5);
         object.position.z = 1;
 
         //
@@ -449,10 +449,10 @@ function ready() {
 function begin() {
 
     showCards();
-    
+
     startTimer();
     gameOn_timeout = setTimeout(gameOn, 20000);
-    
+
     gameState = GameState.PreGameCountdown;
     updateView();
 }

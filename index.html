@@ -4,8 +4,8 @@
 <head>
     <title>Memory Game</title>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
 
 <body>
@@ -14,7 +14,8 @@
     <link rel="stylesheet" type="text/css" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="libs/three.min.js"></script>
     <script src="libs/threejs/libs/tween.min.js"></script>
     <script src="libs/threejs/renderers/CSS3DRenderer.js"></script>
@@ -49,7 +50,7 @@
                         </select>
                     </div>
                 </div>
-                <div id="description">
+                <div id="difficulty_description">
                     ...
                 </div>
             </div>
@@ -62,12 +63,12 @@
     <div id="pregame_countdown">
         <div class="topbar">
             <div class="content centered">
-                <div class="description">Try your best to memorize the cards shown. <span id="time" class="description">Time:
-                    <span id="ready_timer"></span></span></div>
-                <div>
-                    <button id="ready" class="button">READY</button>
+                <div class="description">Try your best to memorize the cards shown.</div>
+                <div class="description">
+                    <span id="time" class="description">Time:<span id="ready_timer"></span></span>
                 </div>
             </div>
+            <button id="ready" class="button">READY</button>
         </div>
         <div class="bottombar"></div>
     </div>
@@ -76,12 +77,10 @@
         <div class="topbar">
             <div class="content centered">
                 <div class="description">Find the matching pairs.</div>
-                <div id="score">
-                    <div>Errors made: <span id="error_count">0</span></div>
-                </div>
+                <div class="description">Errors made: <span id="error_count">0</span></div>
             </div>
+            <button id="quit" class="button">QUIT</button>
         </div>
-        <button id="quit" class="button">QUIT</button>
         <div class="bottombar"></div>
     </div>
 
