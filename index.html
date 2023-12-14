@@ -4,7 +4,8 @@
 <head>
     <title>Memory Game</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <script src="libs/threejs/renderers/CSS3DRenderer.js"></script>
 
     <div id="game_setup" class="blocker">
-        <div class="content panel">
+        <div class="top-left content panel">
 
             <div class="header">How to play:</div>
             <div>After clicking "Begin", you will have 20 seconds to memorize the cards that turn over. You will then be
@@ -84,11 +85,9 @@
         <div class="bottombar"></div>
     </div>
 
-    <div id="post_game_menu" class="content centered">
-        <div id="success">
-            <div id="success_text">Congratulations!</div>
-            <button id="reset" class="button">PLAY AGAIN</button>
-        </div>
+    <div id="post_game_menu" class="top-left content panel">
+        <div id="success_text">Congratulations!</div>
+        <button id="reset" class="button">PLAY AGAIN</button>
     </div>
 
     <div id="container">
